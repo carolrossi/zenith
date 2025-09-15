@@ -15,10 +15,10 @@ export function CardDemo4() {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader>
-        <CardTitle className={"text-2xl font-bold"}>CD Taylor Swift - Lover Standard</CardTitle>
+        <CardTitle className={"text-2xl font-bold"}>Metodologia Hard</CardTitle>
       </CardHeader>
       <CardContent>
-        <img src="https://universalmusic.vtexassets.com/arquivos/ids/173024-1200-auto?v=637808136026970000&width=1200&height=auto&aspect=true" className="w-68 m mx-auto"/>
+        <img src="https://sankhya.com.br/wp-content/uploads/2022/12/Valores-do-manifesto-agil.png" className="w-60 m mx-auto"/>
       </CardContent>
       <CardFooter className="flex-col gap-2">
         <Button type="submit" className="w-full cursor-pointer">

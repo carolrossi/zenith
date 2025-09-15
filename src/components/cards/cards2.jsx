@@ -15,10 +15,10 @@ export function CardDemo2() {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader>
-        <CardTitle className={"text-2xl font-bold"}>Speak Now (Taylor's Version) </CardTitle>
+        <CardTitle className={"text-2xl font-bold"}>Metodologia Scrum </CardTitle>
       </CardHeader>
       <CardContent>
-        <img src="https://universalmusic.vtexassets.com/arquivos/ids/182380-1200-auto?v=638911554345030000&width=1200&height=auto&aspect=true" className="w-68 mx-auto"/>
+      <img src="https://sankhya.com.br/wp-content/uploads/2022/12/Valores-do-manifesto-agil.png" className="w-60 mx-auto"/>
       </CardContent>
       <CardFooter className="flex-col gap-2">
         <Button type="submit" className="w-full cursor-pointer">

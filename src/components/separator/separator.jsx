@@ -7,10 +7,10 @@ import { CardDemo4 } from "../cards/cards4"
 export function SeparatorDemo() {
   return (
     <div>
-      <div className="space-y-1">
-        <h4 className="text-sm md:text-2xl leading-none font-medium">VINIL DA TAYLOR</h4>
+      <div className="space-y-2 mt-15">
+        <h4 className="text-sm md:text-2xl leading-none font-medium">Metodologias</h4>
         <p className="text-muted-foreground text-sm">
-        Coleções de vinis da Taylor Swift disponíveis 
+       Confira as melhores metadologias
         </p>
       </div>
 
