@@ -8,80 +8,92 @@ import React from "react";
 const testimonials = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
-    company: "TechCorp",
+    name: "Carlos Silva",
+    designation: "Gerente de Projetos",
+    company: "InovaTech",
     testimonial:
-      "This product has completely transformed the way we work. The efficiency and ease of use are unmatched!",
+      "O Zenith revolucionou nossa organização! As integrações com Notion e Canva tornaram nosso fluxo de trabalho muito mais eficiente.",
     avatar: "https://randomuser.me/api/portraits/men/1.jpg",
   },
   {
     id: 2,
-    name: "Sophia Lee",
-    designation: "Data Analyst",
-    company: "InsightTech",
+    name: "Ana Paula Mendes",
+    designation: "Empreendedora",
+    company: "Startup Brasil",
     testimonial:
-      "This tool has saved me hours of work! The analytics and reporting features are incredibly powerful.",
+      "Finalmente consigo centralizar todas minhas planilhas e metas em um só lugar. As templates personalizáveis são incríveis!",
     avatar: "https://randomuser.me/api/portraits/women/6.jpg",
   },
   {
     id: 3,
-    name: "Michael Johnson",
-    designation: "UX Designer",
-    company: "DesignPro",
+    name: "Ricardo Oliveira",
+    designation: "Designer Freelancer",
+    company: "CreativeStudio",
     testimonial:
-      "An amazing tool that simplifies complex tasks. Highly recommended for professionals in the industry.",
+      "A integração premium com o Canva mudou completamente minha produtividade. Agora consigo gerenciar projetos e designs simultaneamente!",
     avatar: "https://randomuser.me/api/portraits/men/3.jpg",
   },
   {
     id: 4,
-    name: "Emily Davis",
-    designation: "Marketing Specialist",
-    company: "BrandBoost",
+    name: "Fernanda Costa",
+    designation: "Estudante de MBA",
+    company: "FGV",
     testimonial:
-      "I've seen a significant improvement in our team's productivity since we started using this service.",
+      "Perfeito para organizar estudos e projetos acadêmicos. As agendas personalizáveis me ajudaram a triplicar minha produtividade!",
     avatar: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     id: 5,
-    name: "Daniel Martinez",
-    designation: "Full-Stack Developer",
-    company: "CodeCrafters",
+    name: "Marcos Andrade",
+    designation: "CEO",
+    company: "TechSolutions",
     testimonial:
-      "The best investment we've made! The support team is also super responsive and helpful.",
+      "O plano empresarial do Zenith com integrações ilimitadas foi o melhor investimento para nossa equipe. Colaboração simplificada!",
     avatar: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     id: 6,
-    name: "Jane Smith",
+    name: "Juliana Santos",
     designation: "Product Manager",
-    company: "InnovateX",
+    company: "DigitalLab",
     testimonial:
-      "The user experience is top-notch! The interface is clean, intuitive, and easy to navigate.",
+      "A interface intuitiva e as integrações com ferramentas premium tornaram o Zenith indispensável para nosso dia a dia!",
     avatar: "https://randomuser.me/api/portraits/women/2.jpg",
   },
 ];
 
 const Testimonial04 = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center py-12 gap-12">
+    <div className="min-h-screen flex flex-col justify-center items-center py-12 gap-12 relative">
       <h2 className="text-5xl font-semibold text-center tracking-[-0.03em] px-6 text-pretty">
-        Success Stories
+        Histórias de Sucesso
       </h2>
       <p className="text-center text-muted-foreground text-xl max-w-2xl">
-        Real stories from people who use and love our product every day
+        Depoimentos reais de pessoas que usam e amam o Zenith todos os dias
       </p>
 
-     
+      {/* Primeira fileira com fade nas laterais */}
       <div className="relative w-full overflow-hidden">
+        {/* Gradiente de fade à esquerda */}
+        <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+        
+        {/* Gradiente de fade à direita */}
+        <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+        
         <div className="marquee-track-left flex gap-6 min-w-max">
           <TestimonialList testimonials={testimonials} />
           <TestimonialList testimonials={testimonials} />
         </div>
       </div>
 
-    
+      {/* Segunda fileira com fade nas laterais */}
       <div className="relative w-full overflow-hidden">
+        {/* Gradiente de fade à esquerda */}
+        <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+        
+        {/* Gradiente de fade à direita */}
+        <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+        
         <div className="marquee-track-right flex gap-6 min-w-max">
           <TestimonialList testimonials={testimonials} />
           <TestimonialList testimonials={testimonials} />

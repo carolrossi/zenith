@@ -15,14 +15,15 @@ export function CardDemo() {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader>
-        <CardTitle className={"text-2xl font-bold"}>Metodologia agil </CardTitle>
+        <CardTitle className={"text-2xl font-bold"}>Canva Premium </CardTitle>
       </CardHeader>
       <CardContent>
-        <img src="https://sankhya.com.br/wp-content/uploads/2022/12/Valores-do-manifesto-agil.png" className="w-60 mx-auto"/>
+        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/canva-icon.png" className="w-60 mx-auto"/>
+        <p className="mt-5 text-gray-500">Crie designs com recursos e elementos ilimitados.</p>
       </CardContent>
       <CardFooter className="flex-col gap-2">
         <Button type="submit" className="w-full cursor-pointer">
-          R$50,00
+        R$29,99/mês - 44% OFF
         </Button>
         
       </CardFooter>

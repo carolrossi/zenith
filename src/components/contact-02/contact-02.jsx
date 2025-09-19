@@ -8,17 +8,16 @@ import { MailIcon, MapPinIcon, MessageCircle, PhoneIcon } from "lucide-react";
 import Link from "next/link";
 
 const Contact02Page = () => (
-  <div className=" flex items-center justify-center py-20">
+  <div className=" flex items-center justify-center py-10">
     <div className="w-full max-w-(--breakpoint-xl) mx-auto px-6 xl:px-0">
       <b className="text-muted-foreground uppercase font-semibold text-sm">
-        Contact Us
+        Entre em Contato
       </b>
       <h2 className="mt-3 text-3xl md:text-4xl font-semibold tracking-tight">
-        Chat with our friendly team!
+        Converse com nossa equipe amigável!
       </h2>
       <p className="mt-3 text-base sm:text-lg text-muted-foreground">
-        We&apos;d love to hear from you. Please fill out this form or shoot us
-        an email.
+        Adoraríamos ouvir você. Preencha este formulário ou envie-nos um e-mail.
       </p>
       <div className="mt-24 grid lg:grid-cols-2 gap-16 md:gap-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12">
@@ -27,14 +26,14 @@ const Contact02Page = () => (
               className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
               <MailIcon />
             </div>
-            <h3 className="mt-6 font-semibold text-xl">Email</h3>
+            <h3 className="mt-6 font-semibold text-xl">E-mail</h3>
             <p className="my-2.5 text-muted-foreground">
-              Our friendly team is here to help.
+              Nossa equipe amigável está aqui para ajudar.
             </p>
             <Link
               className="font-medium text-primary"
-              href="mailto:akashmoradiya3444@gmail.com">
-              akashmoradiya3444@gmail.com
+              href="mailto:contato@zenithapp.com">
+              contato@zenithapp.com
             </Link>
           </div>
           <div>
@@ -42,12 +41,12 @@ const Contact02Page = () => (
               className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
               <MessageCircle />
             </div>
-            <h3 className="mt-6 font-semibold text-xl">Live chat</h3>
+            <h3 className="mt-6 font-semibold text-xl">Chat ao vivo</h3>
             <p className="my-2.5 text-muted-foreground">
-              Our friendly team is here to help.
+              Nossa equipe amigável está aqui para ajudar.
             </p>
             <Link className="font-medium text-primary" href="#">
-              Start new chat
+              Iniciar novo chat
             </Link>
           </div>
           <div>
@@ -55,15 +54,15 @@ const Contact02Page = () => (
               className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
               <MapPinIcon />
             </div>
-            <h3 className="mt-6 font-semibold text-xl">Office</h3>
+            <h3 className="mt-6 font-semibold text-xl">Escritório</h3>
             <p className="my-2.5 text-muted-foreground">
-              Come say hello at our office HQ.
+              Venha nos visitar em nossa sede.
             </p>
             <Link
               className="font-medium text-primary"
               href="https://map.google.com"
               target="_blank">
-              100 Smith Street Collingwood <br /> VIC 3066 AU
+              Av. Paulista, 1000 <br /> São Paulo - SP, 01310-100
             </Link>
           </div>
           <div>
@@ -71,14 +70,14 @@ const Contact02Page = () => (
               className="h-12 w-12 flex items-center justify-center bg-primary/5 dark:bg-primary/10 text-primary rounded-full">
               <PhoneIcon />
             </div>
-            <h3 className="mt-6 font-semibold text-xl">Phone</h3>
+            <h3 className="mt-6 font-semibold text-xl">Telefone</h3>
             <p className="my-2.5 text-muted-foreground">
-              Mon-Fri from 8am to 5pm.
+              Seg a Sex das 8h às 18h.
             </p>
             <Link
               className="font-medium text-primary"
-              href="tel:akashmoradiya3444@gmail.com">
-              +1 (555) 000-0000
+              href="tel:+5511999999999">
+              +55 (11) 99999-9999
             </Link>
           </div>
         </div>
@@ -89,48 +88,48 @@ const Contact02Page = () => (
             <form>
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
                 <div className="col-span-2 sm:col-span-1">
-                  <Label htmlFor="firstName">First Name</Label>
+                  <Label htmlFor="firstName">Nome</Label>
                   <Input
-                    placeholder="First name"
+                    placeholder="Seu nome"
                     id="firstName"
                     className="mt-2 bg-white h-10 shadow-none" />
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                  <Label htmlFor="lastName">Last Name</Label>
+                  <Label htmlFor="lastName">Sobrenome</Label>
                   <Input
-                    placeholder="Last name"
+                    placeholder="Seu sobrenome"
                     id="lastName"
                     className="mt-2 bg-white h-10 shadow-none" />
                 </div>
                 <div className="col-span-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email">E-mail</Label>
                   <Input
                     type="email"
-                    placeholder="Email"
+                    placeholder="seu@email.com"
                     id="email"
                     className="mt-2 bg-white h-10 shadow-none" />
                 </div>
                 <div className="col-span-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">Mensagem</Label>
                   <Textarea
                     id="message"
-                    placeholder="Message"
+                    placeholder="Como podemos ajudar?"
                     className="mt-2 bg-white shadow-none"
                     rows={6} />
                 </div>
                 <div className="col-span-2 flex items-center gap-2">
                   <Checkbox id="acceptTerms" className="bg-background" />
                   <Label htmlFor="acceptTerms" className="gap-0">
-                    You agree to our
+                    Você concorda com nossos
                     <Link href="#" className="underline ml-1">
-                      terms and conditions
+                      termos e condições
                     </Link>
                     <span>.</span>
                   </Label>
                 </div>
               </div>
               <Button className="mt-6 w-full" size="lg">
-                Submit
+                Enviar
               </Button>
             </form>
           </CardContent>

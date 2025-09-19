@@ -15,14 +15,15 @@ export function CardDemo4() {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader>
-        <CardTitle className={"text-2xl font-bold"}>Metodologia Hard</CardTitle>
+        <CardTitle className={"text-2xl font-bold"}>Combo Pacote Office</CardTitle>
       </CardHeader>
       <CardContent>
-        <img src="https://sankhya.com.br/wp-content/uploads/2022/12/Valores-do-manifesto-agil.png" className="w-60 m mx-auto"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg/648px-Microsoft_Office_logo_%282013%E2%80%932019%29.svg.png" className="w-50 m mx-auto"/>
+        <p className="mt-5 text-gray-500"> Word, Excel e PowerPoint originais com licença.</p>
       </CardContent>
       <CardFooter className="flex-col gap-2">
         <Button type="submit" className="w-full cursor-pointer">
-          R$50,00
+        R$149,99 - 58% OFF
         </Button>
         
       </CardFooter>

@@ -15,14 +15,15 @@ export function CardDemo2() {
   return (
     <Card className="w-full max-w-sm">
       <CardHeader>
-        <CardTitle className={"text-2xl font-bold"}>Metodologia Scrum </CardTitle>
+        <CardTitle className={"text-2xl font-bold"}>Notion Pro </CardTitle>
       </CardHeader>
       <CardContent>
-      <img src="https://sankhya.com.br/wp-content/uploads/2022/12/Valores-do-manifesto-agil.png" className="w-60 mx-auto"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" className="w-60 mx-auto"/>
+      <p className="mt-5 text-gray-500">Organize ideias, tarefas e projetos com eficiência.</p>
       </CardContent>
       <CardFooter className="flex-col gap-2">
         <Button type="submit" className="w-full cursor-pointer">
-          R$50,00
+        R$49,99/mês - 41% OFF
         </Button>
         
       </CardFooter>
